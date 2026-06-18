@@ -1,0 +1,109 @@
+# ============================================
+# Python cache & bytecode
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyw
+
+# ============================================
+# LaTeX compilation artifacts
+# ============================================
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+
+# ============================================
+# LaTeX source (contains write-ups with answers)
+# ============================================
+**/Lab*/**/*.tex
+
+# ============================================
+# PDF reports (contain complete lab answers)
+# ============================================
+*.pdf
+
+# ============================================
+# IDE configurations
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# OS junk
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# Calibrated / final CSV data (Lab1 - Spectral Alignment)
+# These contain aligned, scaled, normalized spectra
+# that represent the "answer" for peak identification
+# ============================================
+Lab1/output/*_aligned_scaled*
+Lab1/output/*_aligned_scaled_norm*
+Lab1/output/*_normalized_rgb*
+Lab1/output/*_norm_factors*
+Lab1/output/*_fit*
+Lab1/output/alignment_params.json
+Lab1/*_aligned_scaled*.csv
+Lab1/reference_spectrum.csv
+
+# ============================================
+# Calibrated CSV data - Lab4 (RC Circuit Results)
+# ============================================
+Lab4/rc_circuit_results.csv
+Lab4/temperature_log.csv
+
+# ============================================
+# Output directories - Lab4
+# ============================================
+Lab4/record_pdf/
+Lab4/temp_log/
+
+# ============================================
+# Calibrated titration data - Lab6
+# Ignore all final titration CSVs but keep uncalibrated samples
+# ============================================
+Lab6/titrator/monitors/
+Lab6/titrator/titration_*.csv
+!Lab6/titrator/*_not_calibrated.csv
+Lab6/titrator/processing_output.txt
+
+# ============================================
+# Raw binary image files (experimental readouts)
+# Keep small schematic PNGs, ignore large raw data
+# ============================================
+Lab2/raw data/*.tiff
+Lab2/raw data/*.tif
+Lab1/*.jpg
+Lab5/images/*.jpg
+Lab6/titrator/images/*.jpg
+
+# ============================================
+# Zipped/compressed archives
+# ============================================
+Lab3/*.zip
+
+# ============================================
+# Archive folder (deleted/redacted files)
+# ============================================
+.archive/
+
+# ============================================
+# Assets folder (non-code media files)
+# ============================================
+assets/
